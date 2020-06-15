@@ -8,6 +8,6 @@ Image fusion is a significant problem in many fields including digital photograp
 
 ## CSC Unfolding
 The CSC optimizes the following problem,
-$\min_{z} \frac{1}{2}\|z-x\|^2_2$
+![avatar](https://latex.codecogs.com/gif.download?%5Cmin_%7B%5Cboldsymbol%20z%7D%5Cfrac%7B1%7D%7B2%7D%5C%7C%5Cboldsymbol%7Bx%7D-%5Cboldsymbol%7Bd%7D*%5Cboldsymbol%7Bz%7D%5C%7C_2%5E2+%5Clambda%20g%28%5Cboldsymbol%7Bz%7D%29)
 ## Network Structure
 ![avatar](image/Net_v3_copy.png)
