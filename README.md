@@ -28,4 +28,5 @@ We replace some operations with deep neural networks' elements and rewritten the
 The above equation is called as the dictnary convolutional unit (DCU).
 
 ## Network Structure
+In our paper, DCUs are regarded as the hidden layers of deep networks. Then, we design three kinds of networks for infrared and visible image fusion, multi-epxosure image fusion, and multi-modal image fusion, as shown in the following figure.
 ![avatar](image/Net_v3_copy.png)
