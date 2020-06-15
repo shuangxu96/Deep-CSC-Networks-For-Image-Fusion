@@ -1,6 +1,7 @@
 # Deep-CSC-Networks-For-Image-Fusion
 Deep Convolutional Sparse Coding Networks for Image Fusion 
-[Shuang Xu*](https://xsxjtu.github.io/)
+
+	<a href="https://xsxjtu.github.io/">Shuang Xu *,</a> 
 	<a href="https://www.researchgate.net/profile/Zixiang_Zhao5">Zixiang Zhao *,</a>
 	<a href="https://www.researchgate.net/profile/Wang_Yicheng4">Yicheng Yang,</a>
 	<a href="http://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">Kai Sun,</a>
