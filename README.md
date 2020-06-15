@@ -15,11 +15,15 @@ The CSC optimizes the following problem,
 
 where <a href="https://www.codecogs.com/eqnedit.php?latex=\lambda" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /></a> is a hyperparameter, * denotes the convolution operator, <a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{z}\in&space;R^{q\times&space;h&space;\times&space;w}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{z}\in&space;R^{q\times&space;h&space;\times&space;w}" title="\boldsymbol{z}\in R^{q\times h \times w}" /></a> is the sparse feature map (or say, code) and <a href="https://www.codecogs.com/eqnedit.php?latex=g(\cdot)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g(\cdot)" title="g(\cdot)" /></a> is a sparse regularizer. This problem can be solved by ISTA, and its updating rule is as below,
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{z}^{(k&plus;1)}&space;\leftarrow&space;\mathrm{prox}_{\lambda/\rho}\left(\boldsymbol{z}^{(k)}&plus;\frac{1}{\rho}\boldsymbol{d}^T*(\boldsymbol{x}-\boldsymbol{d}*\boldsymbol{z}^{(k)})\right)." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{z}^{(k&plus;1)}&space;\leftarrow&space;\mathrm{prox}_{\lambda/\rho}\left(\boldsymbol{z}^{(k)}&plus;\frac{1}{\rho}\boldsymbol{d}^T*(\boldsymbol{x}-\boldsymbol{d}*\boldsymbol{z}^{(k)})\right)" title="\boldsymbol{z}^{(k+1)} \leftarrow \mathrm{prox}_{\lambda/\rho}\left(\boldsymbol{z}^{(k)}+\frac{1}{\rho}\boldsymbol{d}^T*(\boldsymbol{x}-\boldsymbol{d}*\boldsymbol{z}^{(k)})\right)" /></a>
+<div align=center>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{z}^{(k&plus;1)}&space;\leftarrow&space;\mathrm{prox}_{\lambda/\rho}\left(\boldsymbol{z}^{(k)}&plus;\frac{1}{\rho}\boldsymbol{d}^T*(\boldsymbol{x}-\boldsymbol{d}*\boldsymbol{z}^{(k)})\right)." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{z}^{(k&plus;1)}&space;\leftarrow&space;\mathrm{prox}_{\lambda/\rho}\left(\boldsymbol{z}^{(k)}&plus;\frac{1}{\rho}\boldsymbol{d}^T*(\boldsymbol{x}-\boldsymbol{d}*\boldsymbol{z}^{(k)})\right)。" title="\boldsymbol{z}^{(k+1)} \leftarrow \mathrm{prox}_{\lambda/\rho}\left(\boldsymbol{z}^{(k)}+\frac{1}{\rho}\boldsymbol{d}^T*(\boldsymbol{x}-\boldsymbol{d}*\boldsymbol{z}^{(k)})\right)" /></a>
+</div>
 
 We replace some operations with deep neural networks' elements and rewritten the updating rule, that is, 
 
+<div align=center>
 <a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{z}^{(k&plus;1)}&space;=&space;f\left(&space;{\rm&space;BN}\left(&space;\boldsymbol{z}^{(k)}&plus;\mathrm{Conv}_1(\boldsymbol{x}-\mathrm{Conv}_0(\boldsymbol{z}^{(k)}))&space;\right)&space;\right)." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{z}^{(k&plus;1)}&space;=&space;f\left(&space;{\rm&space;BN}\left(&space;\boldsymbol{z}^{(k)}&plus;\mathrm{Conv}_1(\boldsymbol{x}-\mathrm{Conv}_0(\boldsymbol{z}^{(k)}))&space;\right)&space;\right)." title="\boldsymbol{z}^{(k+1)} = f\left( {\rm BN}\left( \boldsymbol{z}^{(k)}+\mathrm{Conv}_1(\boldsymbol{x}-\mathrm{Conv}_0(\boldsymbol{z}^{(k)})) \right) \right)." /></a>
+</div>
 
 The above equation is called as the dictnary convolutional unit (DCU).
 
