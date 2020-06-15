@@ -11,6 +11,6 @@ The CSC optimizes the following problem,
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\min_{\boldsymbol&space;z}\frac{1}{2}\|\boldsymbol{x}-\boldsymbol{d}*\boldsymbol{z}\|_2^2&plus;\lambda&space;g(\boldsymbol{z})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\min_{\boldsymbol&space;z}\frac{1}{2}\|\boldsymbol{x}-\boldsymbol{d}*\boldsymbol{z}\|_2^2&plus;\lambda&space;g(\boldsymbol{z})." title="\min_{\boldsymbol z}\frac{1}{2}\|\boldsymbol{x}-\boldsymbol{d}*\boldsymbol{z}\|_2^2+\lambda g(\boldsymbol{z})" /></a>
 
-where $\lambda$
+where <a href="https://www.codecogs.com/eqnedit.php?latex=\lambda" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /></a> is a hyperparameter, * denotes the convolution operator, <a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{z}\in&space;R^{q\times&space;h&space;\times&space;w}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{z}\in&space;R^{q\times&space;h&space;\times&space;w}" title="\boldsymbol{z}\in R^{q\times h \times w}" /></a> is the sparse feature map (or say, code) and <a href="https://www.codecogs.com/eqnedit.php?latex=g(\cdot)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g(\cdot)" title="g(\cdot)" /></a> is a sparse regularizer.
 ## Network Structure
 ![avatar](image/Net_v3_copy.png)
