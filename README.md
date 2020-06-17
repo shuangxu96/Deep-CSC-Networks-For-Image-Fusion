@@ -11,7 +11,7 @@ CSC-IVFN: [Coming Soon](https://github.com/xsxjtu/xxxxxxxx)
 
 CSC-MEFN: [website](https://github.com/xsxjtu/CSC-MEFN)
 
-CSC-MMFN: [website](https://github.com/xsxjtu/CSC-MFFN)
+CSC-MMFN: [website](https://github.com/xsxjtu/CSC-MMFN)
 
 ## CSC Unfolding
 The CSC optimizes the following problem,
